@@ -1,5 +1,4 @@
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 
 import F1NewsItemCard from "../components/F1NewsItemCard";
 
@@ -51,7 +50,7 @@ export default function Home(props) {
     <div>
       <div className={styles.header}>
         <a href="https://www.essentiallysports.com">
-          <Image
+          <img
             className={styles.logo}
             src="https://image-cdn.essentiallysports.com/wp-content/uploads/es_horizontal-1.png"
             alt=""
@@ -62,7 +61,6 @@ export default function Home(props) {
         <div>
           <h1>One Thing Charles Doesn't Have: Leclerc Given a Reality Check</h1>
         </div>
-        <Image src="https://cdn.essentiallysports.com/wp-content/uploads/2023/05/Charles-Leclerc.jpg" />
         <p>
           After Miami blunders, ex-Ferrari manager highlights Charles Leclerc's
           weakness, claiming if he can handle it, he can break the Monaco jinx.
