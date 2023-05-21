@@ -1,0 +1,167 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto';
+  }
+  
+  .card {
+	width: 300px;
+  }
+  
+  .link {
+	text-decoration: none;
+	color: #111;
+  }
+
+  @media (max-width: 768px) {
+	.imagecontainer {
+	  flex: 0 0 100%;
+	  height: 300px;
+	}
+  }
+  
+  .imagecontainer {
+	height: 200px; /* Adjust the height as desired */
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s ease;
+  }
+
+.loadingImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+  .right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
+  .content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	flex-grow: 1;
+  }
+  
+  .categories {
+	display: flex;
+	column-gap: 5px;
+	row-gap: 5px;
+	flex-flow: wrap;
+  }
+  
+  .category {
+	padding: 5px;
+	background: #555;
+	border-radius: 5px;
+	font-size: 12px;
+	color: #f7f7f7;
+	text-shadow: 0.1px 0.1px #f1f1f177;
+	display: flex;
+	align-items: center;
+  }
+  
+  .title {
+	font-weight: bold;
+	font-size: 20px;
+	max-height: 100px; /* Adjust the maximum height as per your requirement */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal; /* Add this line to enable text wrapping */
+  }
+  
+  .description {
+	font-size: 14px;
+	color: #898989;
+	max-height: 80px; /* Adjust the maximum height as per your requirement */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal; /* Add this line to enable text wrapping */
+  }
+  
+  .description p:nth-child(2) {
+	display: none;
+  }
+  
+  .footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 12px;
+  }
+  
+  .creatordate {
+	display: flex;
+	column-gap: 5px;
+  }
+  
+  .creator {
+	color: #f75454;
+  }
+  
+  .date {
+	color: #898989;
+  }
+  
+  .readmore {
+	color: #f75454;
+	text-decoration: underline;
+  }
+  
+  .readmore:hover {
+	cursor: pointer;
+  }
+  
+  .fullcontentcontainer {
+	position: relative;
+	overflow: hidden;
+	height: 0px;
+	transition: all 0.5s ease;
+  }
+  
+  .fullcontent {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #0002;
+	border-radius: 5px;
+	margin-top: 10px;
+  }
+  
+  .closecontent {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+  }
+  
+  .closebutton {
+	background: #222;
+	font-size: 20px;
+	color: #f7f7f7;
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 5px;
+  }
+  
+  .closebutton:hover {
+	cursor: pointer;
+  }
+	

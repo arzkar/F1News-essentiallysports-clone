@@ -1,0 +1,70 @@
+.container {
+	overflow-x: scroll;
+	white-space: nowrap;
+  }
+  
+.news {
+	display: inline-flex;
+  }
+  
+
+.header {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #0002;
+	margin: 0px 30px;
+	padding-top: 10px;
+	position: fixed;
+	width: calc(100% - 60px);
+	background: #fff;
+	z-index: 100;
+}
+
+@media (max-width: 768px) 
+{ 
+	.header {
+		margin: 0px;
+		width: 100%;
+	}
+}
+
+.logo {
+	height: 100%;
+}
+
+.body {
+	width: 100%;
+	padding-top: 60px;
+}
+
+.left {
+	padding: 10px 0px;
+	border-right: 1px solid #0002;
+}
+
+.right {
+	padding: 0px 30px;	
+}
+
+@media (max-width: 768px) 
+{ 
+	.news {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0%;
+	}
+}
+
+.newsitem {
+	padding: 30px;
+	border-bottom: 1px solid #0002;
+	flex: 0 0 300px; /* Add this line to set a fixed width */
+  }
+  
+  @media (max-width: 768px) {
+	.newsitem {
+	  padding: 20px;
+	}
+  }
+  
