@@ -1,4 +1,6 @@
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
+
 import F1NewsItemCard from "../components/F1NewsItemCard";
 
 export async function getServerSideProps(context) {
@@ -48,7 +50,7 @@ export default function Home(props) {
     <div>
       <div className={styles.header}>
         <a href="https://www.essentiallysports.com">
-          <img
+          <Image
             className={styles.logo}
             src="https://image-cdn.essentiallysports.com/wp-content/uploads/es_horizontal-1.png"
             alt=""
@@ -59,7 +61,7 @@ export default function Home(props) {
         <div>
           <h1>One Thing Charles Doesn't Have: Leclerc Given a Reality Check</h1>
         </div>
-        <img src="https://cdn.essentiallysports.com/wp-content/uploads/2023/05/Charles-Leclerc.jpg" />
+        <Image src="https://cdn.essentiallysports.com/wp-content/uploads/2023/05/Charles-Leclerc.jpg" />
         <p>
           After Miami blunders, ex-Ferrari manager highlights Charles Leclerc's
           weakness, claiming if he can handle it, he can break the Monaco jinx.
@@ -101,7 +103,7 @@ export default function Home(props) {
             <h3>Trending</h3>
             <div className={styles.news}>
               {items.map((item) => (
-                <div className={styles.newsitem}>
+                <div className={styles.newsitem} key={title}>
                   <F1NewsItemCard item={item} />
                 </div>
               ))}
