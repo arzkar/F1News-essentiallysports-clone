@@ -4,7 +4,8 @@ import Image from "next/image";
 import F1NewsItemCard from "../components/F1NewsItemCard";
 
 export async function getServerSideProps(context) {
-  const apiUrl = "http://localhost:3000/api/proxy";
+  const apiUrl =
+    "https://f1-news-essentiallysports-clone-tcco.vercel.app/api/proxy";
 
   try {
     const res = await fetch(apiUrl);
