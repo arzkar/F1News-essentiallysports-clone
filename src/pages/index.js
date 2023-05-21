@@ -104,7 +104,7 @@ export default function Home(props) {
             <h3>Trending</h3>
             <div className={styles.news}>
               {items.map((item) => (
-                <div className={styles.newsitem} key={title}>
+                <div className={styles.newsitem} key={item.title}>
                   <F1NewsItemCard item={item} />
                 </div>
               ))}
